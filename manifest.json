@@ -13,6 +13,8 @@
             "https://*.google.com/*"
             ],
         "css": ["fix.css"],
+        "js": ["/assets/vendor/jquery-2.2.3.min.js", "tab.js"],
+
         "run_at": "document_end"         // pay attention to this line
         }
     ], 

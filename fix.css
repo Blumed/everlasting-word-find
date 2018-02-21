@@ -1,7 +1,73 @@
-	.mblink:visited, a:visited{color:#F26444 !important;}
-	.r a:link {color:#669993;}
-	div#hdtbSum {background:#f1f1f1;}
-	#main {background:#f1f1f1;}
-	#gbqfb {background:#669993;}
-	#slim_appbar, #gbq1 {display:none;}
-	.gbt {margin-left:9.5em;}
+.mblink:visited,
+a:visited {
+  color: #F26444 !important;
+}
+
+.r a:link {
+  color: #669993;
+}
+
+#appbar,
+#main {
+  background: #f1f1f1 !important;
+}
+
+.kp-blk {
+  background-color: white;
+}
+
+
+
+
+
+#gbqfb {
+  background: #669993;
+}
+
+#slim_appbar {
+  visibility: hidden;
+}
+#footcnt {
+  display: none;
+}
+
+
+.gbt {
+  margin-left: 9.5em;
+}
+
+h3.r a:focus {
+  /*font-size: 1.5rem;*/
+  outline: transparent;
+  /*transition: all 0.3s ease-in-out;*/
+}
+
+.srg .g {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.thisisit {
+  border: 1px solid #666;
+  padding: 5px;
+}
+
+#tads,
+#tadsb {
+  display: none;
+}
+
+
+@media screen and (max-width: 1555px) {
+  #foot {
+    /* background: white; */
+    /* left: 150px;
+    bottom: 0px;
+    top: inherit;
+    transition: all .3s ease;
+    margin-bottom: -1.3rem; */
+    position: relative;
+
+  }
+}
+

@@ -1,6 +1,8 @@
-#Better Google Search Results Chrome Extension
+# Better Google Search Results Chrome Extension
 
-1. Download
-2. <a href="chrome://extensions" target="_blank" />chrome://extensions/</a>
-3. Click load unpacked extension
+[x] Removes ads at top and bottom for index
+[x] Clearer link visited color
+[x] removed search filter
+
+
 

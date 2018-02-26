@@ -1,3 +1,5 @@
+'use strict';
+
 // chrome.runtime.sendMessage({ fn: "getSelector" } , function(response) {
 // 	//console.log(response.selector, response.style);
 //     $('head').append($('<style type="text/css">' + response.style + '</style>'));
@@ -30,8 +32,16 @@
       //                 storageChange.newValue);
       //   }
       // });
-var customStyles = document.createElement('style'); 
-customStyles.appendChild(document.createTextNode(
-   'body { background-color: ' + localStorage.getItem('background-color') + '}'
-));
-document.documentElement.insertBefore(customStyles); 
+// var customStyles = document.createElement('style'); 
+// customStyles.appendChild(document.createTextNode(
+//    'body { background-color: ' + localStorage.getItem('background-color') + '}'
+// ));
+// document.documentElement.insertBefore(customStyles); 
+// function injectStyles(file, node) {
+//   var th = document.body;
+//   var s = document.createElement('link');
+//   s.rel = 'stylesheet'
+//   s.setAttribute('href', file);
+//   th.appendChild(s);
+// }
+// injectStyles(chrome.extension.getURL('assets/css/style.css'), 'body');

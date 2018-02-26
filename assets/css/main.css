@@ -1,4 +1,6 @@
 label {
 	margin-bottom: 1rem;
 }
-body{background: red;}
+body {
+	width: 100px;
+}

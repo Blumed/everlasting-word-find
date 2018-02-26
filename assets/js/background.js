@@ -10,12 +10,12 @@ var background = {
             });
     },
 
-    setSelections: function(request, sender, sendResponse) {
-        // console.log('setting selectors', request.selector);
-         console.log('setting style', request.style);
-        // console.log('setting matched', request.matched);
-        this.style = request.style;
-    },
+    // setSelections: function(request, sender, sendResponse) {
+    //     // console.log('setting selectors', request.selector);
+    //      console.log('setting style', request.style);
+    //     // console.log('setting matched', request.matched);
+    //     this.style = request.style;
+    // },
 
     getSelector: function(request, sender, sendResponse) {
         // console.log('getting selector', this.selector);

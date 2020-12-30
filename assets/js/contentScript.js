@@ -47,6 +47,8 @@ const results = removeDuplicates(data)
 
 
 
+
+
 let shuffled = results.sort(function() {
     return .5 - Math.random()
 });

@@ -88,7 +88,7 @@ const showModal = () => {
     );
     modal.innerHTML = `<iframe id="popup-content"; style="height:100%;width: 100%;"></iframe>
       <div style="position:absolute; top:0px; left:0px;">
-      <button style="padding: 2px 15px; font-size: 20px; border: none; border-radius: 20px; border: 1px solid black;">x</button>
+      <button style="padding: 2px 13px; font-size: 20px; border: none; border-radius: 20px; border: 1px solid black;">x</button>
       </div>`;
     document.body.appendChild(modal);
     const dialog = document.querySelector("dialog");

@@ -85,10 +85,24 @@ button::-moz-focus-inner {
   width: 100%;
 }
 
-#words li {
+#words li{
   padding: 3px 0;
   font: 1em sans-serif;
+  display: flex;
+}
+
+#words li input{
   pointer-events: none;
+}
+
+#words li a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
 }
 
 /* indicates that the word has been found */

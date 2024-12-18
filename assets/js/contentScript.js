@@ -63,6 +63,7 @@ chrome.runtime.sendMessage({
 });
 
 chrome.runtime.onMessage.addListener((request) => {
+	console.log(request);
 	if (request.type === "popup-modal") {
 		showModall();
 	}
@@ -73,7 +74,8 @@ const showModall = () => {
 	modal.setAttribute(
 		"style",
 		`
-      width: 1000px;
+      width: 100%;
+	  max-width: 1000px;
       height: 800px;
       padding: 0;
       border: none;
@@ -89,7 +91,7 @@ const showModall = () => {
 	modal.id = "__The_Model_Modal__";
 	modal.innerHTML = `<iframe id="popup-content" style="height:100%;width: 100%;padding: 1rem;"></iframe>
       <div style="position:absolute; top: 10px; right: 10px;">
-      <button type="button" style="padding: 2px; color: black; display: flex; align-items: center; border: none; border-radius: 20px; border: 1px solid black;"><svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewBox="0 -960 960 960" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+      <button type="button" style="padding: 2px; color: black; cursor: pointer; height: 20px; width: 20px; min-width: 100%; justify-content: center; background-color: #edf0f8; display: flex; align-items: center; border: none; border-radius: 20px; border: 1px solid black;"><svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewBox="0 -960 960 960" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
       </div>`;
 	document.body.appendChild(modal);
 	const dialog = document.getElementById("__The_Model_Modal__");

@@ -89,13 +89,13 @@ const showModall = () => {
 	modal.id = "__The_Model_Modal__";
 	modal.innerHTML = `<iframe id="popup-content" style="height:100%;width: 100%;padding: 1rem;"></iframe>
       <div style="position:absolute; top: 10px; right: 10px;">
-      <button type="button" style="padding: 2px; display: flex; align-items: center; border: none; border-radius: 20px; border: 1px solid black;"><svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewBox="0 -960 960 960" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+      <button type="button" style="padding: 2px; color: black; display: flex; align-items: center; border: none; border-radius: 20px; border: 1px solid black;"><svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" viewBox="0 -960 960 960" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
       </div>`;
 	document.body.appendChild(modal);
 	const dialog = document.getElementById("__The_Model_Modal__");
 	dialog.showModal();
 	const iframe = document.getElementById("popup-content");
-	iframe.src = chrome.extension.getURL("index.html");
+	iframe.src = chrome.runtime.getURL("index.html");
 	iframe.frameBorder = 0;
 	(dialog.querySelector("button") && dialog).addEventListener("click", () => {
 		dialog.close();

@@ -40,7 +40,7 @@ function recreate() {
 recreate();
 
 function reloadMainTab() {
-	window.location.href = chrome.extension.getURL("index.html");
+	window.location.href = chrome.runtime.getURL("index.html");
 }
 
 document.getElementById("refresh").addEventListener("click", reloadMainTab);
